@@ -7,7 +7,7 @@ import { useLocalStorageState } from "./useLocalStorageState";
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
-const KEY = "b4bad093";
+const KEY = process.env.API_KEY;
 
 export default function App() {
   const [query, setQuery] = useState("");
